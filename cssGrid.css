@@ -1,0 +1,127 @@
+body{
+    background-color:skyblue;
+   
+}
+.grid{
+    display:grid;
+    width: auto;
+    height:auto;
+    border:3px solid blue;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows:repeat(2,auto);
+    gap:5px;
+    
+}
+.grid div{
+    padding: 5px;
+    border:3px solid yellow;
+}
+.grid2{ 
+    margin-top: 5px;
+    display:grid;    
+    grid-template-columns:repeat(3,1fr);    
+    gap:1em;
+    grid-template-rows:minmax(30px,auto);
+}
+.grid2 div{
+    border:3px solid;
+    padding: 5px;
+    background: violet;
+}
+#txt-grid{    
+    display:grid;    
+    grid-template-columns:repeat(2,1fr);
+    gap:0.5em; 
+     background-color: yellow;
+     
+}
+#txt-grid div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.align{
+    width: auto;
+    height: auto;
+    background: turquoise;
+    padding: 5px;
+    margin: auto;
+    margin-top:10px;
+    border:2px solid;
+    display: grid;
+    grid-template-columns:repeat(3,auto);
+    grid-template-rows: minmax(100px,auto);
+    gap: 1em;
+    
+
+}
+.align div{
+    border:2px solid rebeccapurple;
+    width: 150px;
+}
+.align:hover{
+    border:3px solid yellow;
+}
+.element1{
+    align-self:start;
+}
+.element2{
+    align-self:center;
+}
+.element3{
+    align-self:end;
+}
+.element4{
+    justify-self: start;
+}
+.element5{
+    justify-self: center;
+}
+
+.element6{
+    justify-self: end;
+}
+.selda{
+    background:blue;
+    width: auto;
+    height: 100vh;
+    color: white;
+    display:grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows:repeat(3,100px);
+}
+.selda div:hover{
+    border:3px solid yellow;
+}
+.selda div{
+    border:2px solid yellowgreen;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.selda1{
+    grid-column: 1/4;
+}
+.selda2{
+    grid-column:2/4;
+}
+.selda3{
+    grid-column:1/3;
+}
+.selda4{
+    grid-row:4/8;
+}
+.selda5{
+    grid-row:4/6;
+
+}
+.selda6{
+    grid-row:4/8;
+
+}
+.selda8{
+    grid-row:6/8;
+}
+.selda9{
+grid-column:2;}
